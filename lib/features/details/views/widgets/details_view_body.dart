@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class DeyailViewBody extends StatelessWidget {
+class BookDetailViewBody extends StatelessWidget {
   // ignore: non_constant_identifier_names
-  const DeyailViewBody.BookDeyailViewBody({super.key});
+  const BookDetailViewBody.BookDeyailViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {

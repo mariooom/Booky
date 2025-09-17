@@ -4,36 +4,36 @@ import 'package:bookly/features/home/presentaion/views/widgets/custom_appbar.dar
 import 'package:bookly/features/home/presentaion/views/widgets/listview/featured_body.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/best_seller/best_seller_list.dart';
 
-
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+    return CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(
           child: Column(
             children: [
               CustomAppbar(),
               FeaturedListBody(),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 14.0),
-                child: SizedBox(
-                  height: 50,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [Text('Best Seller', style: Styles.textStyle20)],
-                  ),
+              SizedBox(height: 15),
+              SizedBox(
+                width: MediaQuery.of(context).size.width,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 15.0),
+                  child: Text('Best Seller', style: Styles.textStyle20),
                 ),
               ),
-              BestSellerListView(),
             ],
           ),
         ),
-      ),
+        SliverFillRemaining(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            child: BestSellerListView(),
+          ),
+        ),
+      ],
     );
   }
 }
