@@ -10,8 +10,6 @@ class BestSellerListItem extends StatelessWidget {
     return SizedBox(
       height: 150,
       child: Row(
-        //textDirection: TextDirection.ltr,
-        //mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SizedBox(width: 10),
           Container(
@@ -31,7 +29,6 @@ class BestSellerListItem extends StatelessWidget {
             width: MediaQuery.of(context).size.width * 0.4,
 
             child: Column(
-              // mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.4,
@@ -48,7 +45,7 @@ class BestSellerListItem extends StatelessWidget {
                     Text('19.50', style: Styles.textStyle18),
                     Spacer(flex: 1),
                     Icon(Icons.star_rate, color: Colors.yellow),
-                    Text('(4.12k)'),
+                    Text('(4.12k)', style: Styles.textStyle14),
                   ],
                 ),
               ],
