@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
 
-const kPrimaryColor = Color(0xff100B20);
+const kWallPaper = Color(0xff100B20);
 const kSectraFine = 'GT Sectra Fine';
+const kDuration = Duration(milliseconds: 300);
