@@ -1,6 +1,6 @@
-import 'package:bookly/core/utilities/assests_data.dart';
-import 'package:bookly/core/utilities/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:bookly/core/utilities/styles.dart';
+import 'package:bookly/core/utilities/assests_data.dart';
 
 class BestSellerListItem extends StatelessWidget {
   const BestSellerListItem({super.key});
@@ -45,8 +45,9 @@ class BestSellerListItem extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Text("19.50", style: Styles.textStyle18),
+                    Text('19.50', style: Styles.textStyle18),
                     Spacer(flex: 1),
+                    Icon(Icons.star_rate, color: Colors.yellow),
                     Text('(4.12k)'),
                   ],
                 ),
