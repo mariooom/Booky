@@ -41,11 +41,11 @@ class BestSellerListItem extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.4,
 
-                  child: Text('Steven King', style: Styles.textStyle14),
+                  child: Text('Stephen King', style: Styles.textStyle14),
                 ),
                 Row(
                   children: [
-                    Text('19.50', style: Styles.textStyle18),
+                    Text("19.50", style: Styles.textStyle18),
                     Spacer(flex: 1),
                     Text('(4.12k)'),
                   ],
