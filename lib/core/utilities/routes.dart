@@ -4,7 +4,8 @@ import 'package:bookly/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRoutes {
-  static const kHome = '/home';
+  static final kHome = '/home';
+  static final kDetails = '/details';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => const SplashView()),
