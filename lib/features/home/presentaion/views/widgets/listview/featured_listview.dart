@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:bookly/core/utilities/assests_data.dart';
 
-class FeaturedListItem extends StatelessWidget {
-  const FeaturedListItem({super.key});
+class CustomBookCover extends StatelessWidget {
+  const CustomBookCover({super.key});
 
   @override
   Widget build(BuildContext context) {

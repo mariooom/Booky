@@ -12,7 +12,7 @@ class FeaturedListBody extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 10,
         itemBuilder: (BuildContext context, int index) {
-          return FeaturedListItem();
+          return CustomBookCover();
         },
       ),
     );
