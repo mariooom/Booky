@@ -1,4 +1,5 @@
 import 'package:bookly/core/utilities/styles.dart';
+import 'package:bookly/features/details/views/widgets/box_action.dart';
 import 'package:bookly/features/details/views/widgets/details_appbar.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/listview/featured_listview.dart';
 import 'package:flutter/material.dart';
@@ -14,14 +15,12 @@ class BookDetailViewBody extends StatelessWidget {
       child: Column(
         children: [
           DetailsAppbar(),
-          SizedBox(height: 50),
-
           CustomBookCover(),
           SizedBox(height: 10),
           Text('Holly', style: Styles.textStyle20),
-          SizedBox(height: 5),
+          SizedBox(height: 2),
           Text('Stephen King', style: Styles.textStyle16),
-          SizedBox(height: 5),
+          SizedBox(height: 2),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -31,6 +30,8 @@ class BookDetailViewBody extends StatelessWidget {
               Text('(4392)', style: Styles.textStyle14),
             ],
           ),
+          const SizedBox(height: 35),
+          BoxAction(),
         ],
       ),
     );
