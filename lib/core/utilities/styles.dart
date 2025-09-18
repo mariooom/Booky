@@ -12,9 +12,15 @@ abstract class Styles {
     fontWeight: FontWeight.w600,
     fontFamily: kCairo,
   );
+  static const textStyle16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    fontFamily: kCairo,
+  );
   static const textStyle14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
     fontFamily: kCairo,
+    color: Colors.grey,
   );
 }
