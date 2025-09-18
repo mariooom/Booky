@@ -33,24 +33,29 @@ class BestSellerListItem extends StatelessWidget {
             SizedBox(
               height: 100,
               width: MediaQuery.of(context).size.width * 0.4,
-      
+
               child: Column(
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.4,
-                    child: Text('Holly', style: Styles.textStyle20, maxLines: 2),
+                    child: Text(
+                      'Holly',
+                      style: Styles.textStyle20,
+                      maxLines: 2,
+                    ),
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.4,
-      
+                    width: MediaQuery.of(context).size.width * 0.5,
+
                     child: Text('Stephen King', style: Styles.textStyle16),
                   ),
                   Row(
                     children: [
                       Text('19.50', style: Styles.textStyle18),
-                      Spacer(flex: 1),
+                      SizedBox(width: 8), //Spacer(flex: 1),
                       Icon(Icons.star_rate, color: Colors.yellow),
-                      Text('(4.12k)', style: Styles.textStyle14),
+                      Text('4.8', style: Styles.textStyle16),
+                      Text('(4392)', style: Styles.textStyle14),
                     ],
                   ),
                 ],

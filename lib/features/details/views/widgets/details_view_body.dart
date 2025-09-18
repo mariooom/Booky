@@ -17,14 +17,18 @@ class BookDetailViewBody extends StatelessWidget {
           SizedBox(height: 50),
 
           CustomBookCover(),
-          SizedBox(height: 8),
+          SizedBox(height: 10),
           Text('Holly', style: Styles.textStyle20),
-          Text('Stephen King', style: Styles.textStyle14),
+          SizedBox(height: 5),
+          Text('Stephen King', style: Styles.textStyle16),
+          SizedBox(height: 5),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(Icons.star_rate, color: Colors.yellow),
-              Text('(4.12k)', style: Styles.textStyle14),
+              Text('4.8', style: Styles.textStyle16),
+              SizedBox(width: 8),
+              Text('(4392)', style: Styles.textStyle14),
             ],
           ),
         ],
