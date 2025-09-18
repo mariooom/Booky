@@ -17,22 +17,17 @@ class HomeViewBody extends StatelessWidget {
               CustomAppbar(),
               FeaturedListBody(),
               SizedBox(height: 15),
-              SizedBox(
-                width: MediaQuery.of(context).size.width,
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 15.0),
+              Padding(
+                padding: const EdgeInsets.only(left: 17.0),
+                child: Align(
+                  alignment: Alignment.topLeft,
                   child: Text('Best Seller', style: Styles.textStyle20),
                 ),
               ),
             ],
           ),
         ),
-        SliverFillRemaining(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
-            child: BestSellerListView(),
-          ),
-        ),
+        SliverFillRemaining(child: BestSellerListView()),
       ],
     );
   }
